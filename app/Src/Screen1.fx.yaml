@@ -1,0 +1,8 @@
+Screen1 As screen:
+
+    Label1 As label:
+        Text: ="Text"
+        X: =411
+        Y: =321
+        ZIndex: =1
+
