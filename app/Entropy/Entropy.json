@@ -1,49 +1,93 @@
 {
-  "ComponentIndexes": {},
+  "ComponentIndexes": {
+    "Component1_1": 1,
+    "Navbar": 2
+  },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Component1_1": 21,
+    "Container1": 10,
+    "Container2": 11,
+    "Container2_1": 13,
+    "Container2_2": 15,
+    "FooterContainer1": 20,
+    "HeaderContainer1": 18,
     "Host": 3,
-    "Label1": 5,
-    "Screen1": 4
+    "Label1": 8,
+    "MainContainer1": 19,
+    "Navbar": 6,
+    "Screen1": 4,
+    "Screen2": 16,
+    "ScreenContainer1": 17
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/31/2023 07:04:03",
+  "HeaderLastSavedDateTimeUTC": "07/31/2023 08:12:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
-  "OrderComponentMetadata": {},
-  "OrderComponentTemplate": {},
+  "OrderComponentMetadata": {
+    "e490ada83dc74ea3b6a2c855329e55ad": 0
+  },
+  "OrderComponentTemplate": {
+    "e490ada83dc74ea3b6a2c855329e55ad": 0
+  },
   "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "label": 0
+    "groupContainer": 0,
+    "label": 1
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Component1_1": {},
+    "Container1": {},
+    "Container2": {},
+    "Container2_1": {},
+    "Container2_2": {},
+    "FooterContainer1": {},
+    "HeaderContainer1": {},
     "Host": {},
     "Label1": {},
-    "Screen1": {}
+    "MainContainer1": {},
+    "Navbar": {},
+    "Screen1": {},
+    "Screen2": {},
+    "ScreenContainer1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Component1_1": 6,
+    "Container1": 0,
+    "Container2": 1,
+    "Container2_1": 2,
+    "Container2_2": 3,
+    "FooterContainer1": 8,
+    "HeaderContainer1": 5,
     "Host": 0,
-    "Label1": 0,
-    "Screen1": 0
+    "Label1": 9,
+    "MainContainer1": 7,
+    "Navbar": 0,
+    "Screen1": 0,
+    "Screen2": 0,
+    "ScreenContainer1": 4
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0376476,
-    "ControlCount": {}
+    "ControlCount": {
+      "e490ada83dc74ea3b6a2c855329e55ad": 2,
+      "groupContainer": 4
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

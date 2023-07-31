@@ -1,0 +1,20 @@
+Navbar As CanvasComponent:
+    Fill: =RGBA(123,104,238,1)
+    Height: =App.Height * 0.1302083333333333
+    Width: =App.Width
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =Navbar.Height
+        Size: =App.Height * 0.027
+        Text: ="Login"
+        Width: =App.Width * 0.139809663250366
+        X: =App.Width * 0.8565153733528551
+        ZIndex: =1
+
