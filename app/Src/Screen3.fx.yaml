@@ -1,16 +1,128 @@
 "Screen3 As screen.'autoLayout_HeaderFooter_ver1.0'":
+    OnVisible: |-
+        =If(
+            App.Width < 800,
+            Set(smallScreen, true),
+            If(
+                (App.Width > 800 And App.Width <= 1100),
+                Set(mediumScreen, true),
+                Set(largeScreen, true)
+            )
+        )
 
-    Container3 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =Parent.Height * 0.1302083333333333
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =668
+        LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =Parent.Width
+        Width: =App.Width
+        X: =0.00
+        Y: =Nav.Height
         ZIndex: =1
+
+        Container2 As groupContainer.manualLayoutContainer:
+            Height: =334.00
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width
+            X: =0.00
+            Y: =0.00
+            ZIndex: =1
+
+            Image1 As image:
+                Height: =Parent.Height
+                Image: ='abstract-purple-fluid-wave-background-free-vector'
+                ImagePosition: =ImagePosition.Fill
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =Parent.Width
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+
+            Container3 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =200.00
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =If(Parent.Width>800, Parent.Width/2.5,Parent.Width)
+                X: =If(Parent.Width>800, Parent.Width * 0.0319619326500732,Parent.Width/2)
+                Y: =40.00
+                ZIndex: =2
+
+                Label3 As label:
+                    Align: =Align.Center
+                    AlignInContainer: =AlignInContainer.Start
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.'Lato Black'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height/2
+                    PaddingBottom: =5.00
+                    PaddingLeft: =5.00
+                    PaddingRight: =15.36
+                    PaddingTop: =15.36
+                    Size: =25
+                    Text: ="ASSET MANAGEMENT PLATFORM"
+                    Width: =Parent.Width
+                    X: =0.00
+                    Y: =80.00
+                    ZIndex: =1
+
+        Container2_2 As groupContainer.manualLayoutContainer:
+            Height: =334.00
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =647.68
+            X: =0.00
+            Y: =334.00
+            ZIndex: =3
+
+    Nav As groupContainer.horizontalAutoLayoutContainer:
+        Height: =App.Height * 0.1302083333333333
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =App.Width
+        X: =0.00
+        Y: =0.00
+        ZIndex: =2
 
         Navbar_1 As Navbar:
             LayoutMinHeight: =640
             LayoutMinWidth: =640
+            X: =0.00
+            Y: =0.00
 

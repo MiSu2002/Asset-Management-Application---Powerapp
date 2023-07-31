@@ -1,20 +1,138 @@
 Navbar As CanvasComponent:
-    Fill: =RGBA(123,104,238,1)
+    Fill: =RGBA(1, 14, 79, 1)
     Height: =App.Height * 0.1302083333333333
     Width: =App.Width
     X: =0
     Y: =0
     ZIndex: =1
 
-    Label1 As label:
-        Align: =Align.Center
+    Container4 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =100.00
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutJustifyContent: =LayoutJustifyContent.End
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Visible: |-
+            =If(
+                App.Width < 850,
+                false,
+                true
+            )
+        Width: =App.Width/1.5
+        X: =App.Width/3
+        Y: =0.00
+        ZIndex: =2
+
+        Button1 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            PaddingBottom: =5.00
+            PaddingLeft: =5.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Products"
+            Width: =120
+            X: =0.00
+            Y: =Parent.Height/3
+            ZIndex: =1
+
+        Button1_2 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            PaddingBottom: =5.00
+            PaddingLeft: =5.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="About"
+            Width: =120
+            X: =368.54
+            Y: =Parent.Height/3
+            ZIndex: =3
+
+        Button1_3 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            PaddingBottom: =5.00
+            PaddingLeft: =5.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Pricing"
+            Width: =120
+            X: =737.08
+            Y: =Parent.Height/3
+            ZIndex: =4
+
+        Container5 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =100.00
+            LayoutMinHeight: =100
+            LayoutMinWidth: =0
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =Parent.Width/4
+            Y: =0.00
+            ZIndex: =5
+
+            Button2 As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height/2.5
+                PaddingBottom: =5.00
+                PaddingLeft: =5.00
+                Text: ="Login"
+                Width: =120
+                X: =Parent.Width/6
+                Y: =Parent.Height*0.3
+                ZIndex: =1
+
+    Icon1 As icon.Hamburger:
         Color: =RGBA(255, 255, 255, 1)
-        Font: =Font.Lato
+        Height: =40.00
+        Icon: =Icon.Hamburger
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Visible: |-
+            =If(
+                App.Width >= 850,
+                false,
+                true
+            )
+        Width: =122.88
+        X: |-
+            =If(
+                App.Width > 600,
+                App.Width - App.Width*0.14641288433382137628111273792094,
+                App.Width - App.Width*0.25622254758418740849194729136164
+            )
+        Y: =Parent.Height/3
+        ZIndex: =3
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Dancing Script'
         FontWeight: =FontWeight.Semibold
-        Height: =Navbar.Height
-        Size: =25
-        Text: ="Login"
-        Width: =178
-        X: =1185
-        ZIndex: =1
+        Height: =Parent.Height*0.9
+        PaddingBottom: =5.00
+        PaddingLeft: =5.00
+        PaddingRight: =15.36
+        PaddingTop: =15.36
+        Size: =If(App.Width>800,40, 30)
+        Text: ="Asseto"
+        Width: =If(App.Width>850, App.Width * 0.149809663250366, App.Width * 0.3809663250366)
+        X: =If(App.Width>800, App.Width * 0.0319619326500732, 5)
+        ZIndex: =4
 
