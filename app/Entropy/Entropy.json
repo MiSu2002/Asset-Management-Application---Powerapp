@@ -1,29 +1,21 @@
 {
   "ComponentIndexes": {
-    "Component1_1": 1,
-    "Navbar": 2
+    "Navbar": 1,
+    "Navbar_1": 1
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Component1_1": 21,
-    "Container1": 10,
-    "Container2": 11,
-    "Container2_1": 13,
-    "Container2_2": 15,
-    "FooterContainer1": 20,
-    "HeaderContainer1": 18,
+    "Container3": 35,
     "Host": 3,
     "Label1": 8,
-    "MainContainer1": 19,
     "Navbar": 6,
-    "Screen1": 4,
-    "Screen2": 16,
-    "ScreenContainer1": 17
+    "Navbar_1": 36,
+    "Screen3": 22
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/31/2023 08:12:15",
+  "HeaderLastSavedDateTimeUTC": "07/31/2023 08:51:20",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -45,39 +37,23 @@
   },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Component1_1": {},
-    "Container1": {},
-    "Container2": {},
-    "Container2_1": {},
-    "Container2_2": {},
-    "FooterContainer1": {},
-    "HeaderContainer1": {},
+    "Container3": {},
     "Host": {},
     "Label1": {},
-    "MainContainer1": {},
     "Navbar": {},
-    "Screen1": {},
-    "Screen2": {},
-    "ScreenContainer1": {}
+    "Navbar_1": {},
+    "Screen3": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Component1_1": 6,
-    "Container1": 0,
-    "Container2": 1,
-    "Container2_1": 2,
-    "Container2_2": 3,
-    "FooterContainer1": 8,
-    "HeaderContainer1": 5,
+    "Container3": 0,
     "Host": 0,
-    "Label1": 9,
-    "MainContainer1": 7,
+    "Label1": 2,
     "Navbar": 0,
-    "Screen1": 0,
-    "Screen2": 0,
-    "ScreenContainer1": 4
+    "Navbar_1": 1,
+    "Screen3": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
@@ -85,8 +61,8 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0376476,
     "ControlCount": {
-      "e490ada83dc74ea3b6a2c855329e55ad": 2,
-      "groupContainer": 4
+      "e490ada83dc74ea3b6a2c855329e55ad": 5,
+      "groupContainer": 10
     }
   },
   "WasLocalDatabaseReferencesEmpty": true

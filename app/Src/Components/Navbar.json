@@ -131,7 +131,7 @@
         "Name": "Label1",
         "Parent": "Navbar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 9,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Data",
@@ -267,7 +267,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "App.Width * 0.8565153733528551",
+            "InvariantScript": "1185",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -279,7 +279,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "App.Width * 0.139809663250366",
+            "InvariantScript": "178",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -321,7 +321,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "App.Height * 0.027",
+            "InvariantScript": "25",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -414,7 +414,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638263874835366863",
+    "LastModifiedTimestamp": "638263902719521625",
     "Name": "Navbar",
     "Rules": [
       {
@@ -473,7 +473,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638263874835366863",
+  "LastModifiedTimestamp": "638263902719521625",
   "Name": "e490ada83dc74ea3b6a2c855329e55ad",
   "OverridableProperties": {},
   "Version": "638263838833420990"

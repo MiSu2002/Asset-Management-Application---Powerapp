@@ -12,9 +12,9 @@ Navbar As CanvasComponent:
         Font: =Font.Lato
         FontWeight: =FontWeight.Semibold
         Height: =Navbar.Height
-        Size: =App.Height * 0.027
+        Size: =25
         Text: ="Login"
-        Width: =App.Width * 0.139809663250366
-        X: =App.Width * 0.8565153733528551
+        Width: =178
+        X: =1185
         ZIndex: =1
 

@@ -1,0 +1,16 @@
+"Screen3 As screen.'autoLayout_HeaderFooter_ver1.0'":
+
+    Container3 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =Parent.Height * 0.1302083333333333
+        LayoutMode: =LayoutMode.Auto
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Navbar_1 As Navbar:
+            LayoutMinHeight: =640
+            LayoutMinWidth: =640
+
