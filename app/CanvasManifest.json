@@ -92,7 +92,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -111,7 +111,7 @@
     "Id": "223d2c68-e74d-4bd1-9813-67e75558b898",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Asset Management Application",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
