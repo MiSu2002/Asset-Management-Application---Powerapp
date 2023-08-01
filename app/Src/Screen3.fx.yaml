@@ -11,9 +11,10 @@
         )
 
     Container1 As groupContainer.verticalAutoLayoutContainer:
-        Height: =668
+        Height: =App.Height - Nav.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
         PaddingBottom: =0.00
         PaddingLeft: =0.00
         PaddingRight: =0.00
@@ -28,8 +29,9 @@
         ZIndex: =1
 
         Container2 As groupContainer.manualLayoutContainer:
-            Height: =334.00
-            LayoutMinHeight: =100
+            Fill: =RGBA(25,52,97,1)
+            Height: =
+            LayoutMinHeight: =70 + Container5_1.Y + Container5_1.Height
             LayoutMinWidth: =250
             PaddingBottom: =0.00
             PaddingLeft: =0.00
@@ -46,7 +48,7 @@
 
             Image1 As image:
                 Height: =Parent.Height
-                Image: ='abstract-purple-fluid-wave-background-free-vector'
+                Image: =If(App.Width<800, '61cf0581613d49524ad6ae42_Asset-Tracking-Software-Benefits',dsBuffer)
                 ImagePosition: =ImagePosition.Fill
                 PaddingBottom: =0.00
                 PaddingLeft: =0.00
@@ -57,52 +59,185 @@
                 Y: =0.00
                 ZIndex: =1
 
-            Container3 As groupContainer.horizontalAutoLayoutContainer:
-                Height: =200.00
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =0.00
-                PaddingLeft: =0.00
-                PaddingRight: =0.00
-                PaddingTop: =0.00
+            Container6 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =If(App.Width<800,RGBA(0, 0, 0, 0.7),RGBA(0, 0, 0, 0.4))
+                Height: |-
+                    =//(Label3.Height + Label3_1.Height + Label3_2.Height)*1.2
+                    Parent.Height
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Width: =If(Parent.Width>800, Parent.Width/2.5,Parent.Width)
-                X: =If(Parent.Width>800, Parent.Width * 0.0319619326500732,Parent.Width/2)
-                Y: =40.00
-                ZIndex: =2
+                Width: =If(App.Width<800, Parent.Width, Parent.Width*0.45)
+                X: =If(App.Width<800, 0, Parent.Width*0.55)
+                ZIndex: =4
 
                 Label3 As label:
-                    Align: =Align.Center
-                    AlignInContainer: =AlignInContainer.Start
+                    Align: =If(App.Width>800, Align.Left, Align.Center)
+                    AutoHeight: =true
                     Color: =RGBA(255, 255, 255, 1)
-                    Font: =Font.'Lato Black'
-                    FontWeight: =FontWeight.Semibold
-                    Height: =Parent.Height/2
-                    PaddingBottom: =5.00
-                    PaddingLeft: =5.00
-                    PaddingRight: =15.36
-                    PaddingTop: =15.36
-                    Size: =25
+                    Font: =Font.Lato
+                    Size: =15
                     Text: ="ASSET MANAGEMENT PLATFORM"
-                    Width: =Parent.Width
-                    X: =0.00
-                    Y: =80.00
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =70
                     ZIndex: =1
 
-        Container2_2 As groupContainer.manualLayoutContainer:
-            Height: =334.00
+                Label3_1 As label:
+                    Align: =If(App.Width>800, Align.Left, Align.Center)
+                    AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Size: =27
+                    Text: ="Get your assets under control"
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =Label3.Y + Label3.Height*1.2
+                    ZIndex: =2
+
+                Label3_2 As label:
+                    Align: =If(App.Width>800, Align.Left, Align.Center)
+                    AutoHeight: =true
+                    Color: =RGBA(255, 255, 255, 1)
+                    Font: =Font.Lato
+                    Height: =
+                    LineHeight: =1.5
+                    Size: =15
+                    Text: ="Never lose track of an item again with our cloud-based asset management and tracking platform that adapts to the way you work."
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =Label3_1.Y + Label3_1.Height
+                    ZIndex: =3
+
+                Container5_1 As groupContainer.manualLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =Button2_1.Height
+                    PaddingBottom: =0.00
+                    PaddingLeft: =0.00
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =Label3_2.Y + Label3_2.Height*1.3
+                    ZIndex: =4
+
+                    Button2_1 As button:
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        PaddingBottom: =5.00
+                        PaddingLeft: =5.00
+                        Text: ="Login"
+                        Width: =120
+                        X: =If(App.Width<800,(Parent.Width - Button2_1.Width)/2,0)
+                        ZIndex: =1
+
+        Container8 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            FillPortions: =0
+            Height: =Label6.Y*5.5
+            LayoutMinHeight: =0
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            ZIndex: =2
+
+            Container11 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =Parent.Height/2  -20
+                LayoutMode: =LayoutMode.Auto
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Width: =Parent.Width*0.6
+                X: =Parent.Width*0.2
+                Y: =Label6.Y + Label6.Height*1.5
+                ZIndex: =1
+
+                Image6 As image:
+                    Height: =94
+                    Image: =download
+                    ImagePosition: =If(App.Width<800,ImagePosition.Fit,ImagePosition.Center)
+                    Width: =Parent.Width/3
+                    X: =60
+                    Y: =60
+                    ZIndex: =1
+
+                Image7 As image:
+                    Image: ='download (1)'
+                    ImagePosition: =If(App.Width<800,ImagePosition.Fit,ImagePosition.Fill)
+                    Width: =Parent.Width/3
+                    ZIndex: =2
+
+                Image8 As image:
+                    Image: ='download (2)'
+                    ImagePosition: =If(App.Width<800,ImagePosition.Fit,ImagePosition.Center)
+                    Width: =Parent.Width/3
+                    ZIndex: =3
+
+            Label6 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Font: =Font.Lato
+                Size: =15
+                Text: ="WE TRACK AND MANAGE MILLIONS OF ASSETS"
+                Width: =Parent.Width*0.9
+                X: |
+                    =Parent.Width*0.05
+                Y: =40
+                ZIndex: =2
+
+        Container8_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
             LayoutMinHeight: =100
             LayoutMinWidth: =250
-            PaddingBottom: =0.00
-            PaddingLeft: =0.00
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =647.68
-            X: =0.00
-            Y: =334.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Y: =Container8.Y + Container8.Height
             ZIndex: =3
+
+            Label6_9 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
+                Size: =15
+                Text: ="WE TRACK AND MANAGE MILLIONS OF ASSETS"
+                Width: =Parent.Width*0.9
+                X: |
+                    =Parent.Width*0.05
+                Y: =100
+                ZIndex: =4
+
+            Label6_10 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
+                Size: =15
+                Text: ="WE TRACK AND MANAGE MILLIONS OF ASSETS"
+                Width: =Parent.Width*0.9
+                X: |
+                    =Parent.Width*0.05
+                Y: =120
+                ZIndex: =5
+
+            Label6_11 As label:
+                Align: =Align.Center
+                Font: =Font.Lato
+                Size: =15
+                Text: ="WE TRACK AND MANAGE MILLIONS OF ASSETS"
+                Width: =Parent.Width*0.9
+                X: |
+                    =Parent.Width*0.05
+                Y: =140
+                ZIndex: =6
 
     Nav As groupContainer.horizontalAutoLayoutContainer:
         Height: =App.Height * 0.1302083333333333

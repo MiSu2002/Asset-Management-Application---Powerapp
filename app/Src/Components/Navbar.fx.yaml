@@ -1,5 +1,5 @@
 Navbar As CanvasComponent:
-    Fill: =RGBA(1, 14, 79, 1)
+    Fill: =RGBA(255, 255, 255, 1)
     Height: =App.Height * 0.1302083333333333
     Width: =App.Width
     X: =0
@@ -7,6 +7,7 @@ Navbar As CanvasComponent:
     ZIndex: =1
 
     Container4 As groupContainer.horizontalAutoLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =100.00
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutJustifyContent: =LayoutJustifyContent.End
@@ -15,6 +16,10 @@ Navbar As CanvasComponent:
         PaddingLeft: =0.00
         PaddingRight: =0.00
         PaddingTop: =0.00
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Visible: |-
             =If(
                 App.Width < 850,
@@ -27,6 +32,7 @@ Navbar As CanvasComponent:
         ZIndex: =2
 
         Button1 As button:
+            Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =Parent.Height
             PaddingBottom: =5.00
@@ -42,6 +48,7 @@ Navbar As CanvasComponent:
             ZIndex: =1
 
         Button1_2 As button:
+            Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =Parent.Height
             PaddingBottom: =5.00
@@ -57,6 +64,7 @@ Navbar As CanvasComponent:
             ZIndex: =3
 
         Button1_3 As button:
+            Color: =RGBA(0, 0, 0, 1)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =Parent.Height
             PaddingBottom: =5.00
@@ -73,6 +81,7 @@ Navbar As CanvasComponent:
 
         Container5 As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
+            DropShadow: =DropShadow.None
             FillPortions: =0
             Height: =100.00
             LayoutMinHeight: =100
@@ -81,13 +90,16 @@ Navbar As CanvasComponent:
             PaddingLeft: =0.00
             PaddingRight: =0.00
             PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Width: =Parent.Width/4
             Y: =0.00
             ZIndex: =5
 
             Button2 As button:
-                Color: =RGBA(0, 0, 0, 1)
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(77, 77, 77, 1)
                 Height: =Parent.Height/2.5
                 PaddingBottom: =5.00
                 PaddingLeft: =5.00
@@ -98,7 +110,7 @@ Navbar As CanvasComponent:
                 ZIndex: =1
 
     Icon1 As icon.Hamburger:
-        Color: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(0, 0, 0, 1)
         Height: =40.00
         Icon: =Icon.Hamburger
         PaddingBottom: =0.00
@@ -122,7 +134,6 @@ Navbar As CanvasComponent:
         ZIndex: =3
 
     Label1 As label:
-        Color: =RGBA(255, 255, 255, 1)
         Font: =Font.'Dancing Script'
         FontWeight: =FontWeight.Semibold
         Height: =Parent.Height*0.9
