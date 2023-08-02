@@ -1,1 +1,24 @@
-{}
+{
+  "8b2ec67e-2389-4790-8b5d-25e210696964": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://sigilotech.sharepoint.com/sites/Edura": {
+        "dataSources": {
+          "Edura": {
+            "tableName": "fe6bde55-a804-4ddf-8882-97ca4b574f07"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Edura"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8b2ec67e-2389-4790-8b5d-25e210696964"
+  }
+}

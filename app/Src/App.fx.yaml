@@ -1,25 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =Collect(
-            ReviewCollection,
-            {
-                TextValue: "“Asset Panda saved me and my team time and money from looking at other asset management software as well as creating our own software internally. We needed a piece of software that could easily track where our assets are and log details as well as check out/in. [We got] all this in a simple user interface and at a low price point. Asset Panda does the trick.”
-        -Lloyd B., Director of Quality Engineering"
-            },
-            {
-                TextValue: "“Our company has really benefited from selecting this software for our start up. Everything can be built to your needs and some of our needs have been a little difficult. But our Implementation specialist and our Customer Success Manager have been incredible. If you're reading this and are thinking about using Asset Panda, you really should.”
-        -Ryan V., Operations Manager"
-            },
-            {
-                TextValue: "“The interface is user-friendly, and the features are comprehensive, allowing me to easily track multiple assets and create detailed reports. The mobile app is very convenient and allows me to access and update my asset information on the go. Overall, I highly recommend Asset Panda for anyone in need of a reliable asset management solution.”
-        -Ivor B., CEO"
-            },
-            {
-                TextValue: "“Asset Panda is easy to use. [It] has really good tech support and can help you in so many ways. It also has free Android and iOS apps with barcode scanning which is very useful. Annual prices are low, and you can customize everything you want.”
-        -Toma S., Capital Marketing Management"
-            }
-        )
+    OnStart: =ClearCollect(CollectionName, Edura)
     StartScreen: =
 
     Host As hostControl.DefaultHostControlVariant:

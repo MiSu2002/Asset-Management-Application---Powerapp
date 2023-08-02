@@ -1,4 +1,4 @@
-"Screen3 As screen.'autoLayout_HeaderFooter_ver1.0'":
+"Homepage As screen.'autoLayout_HeaderFooter_ver1.0'":
     OnVisible: |-
         =If(
             App.Width < 800,
@@ -579,7 +579,7 @@
             DropShadow: =DropShadow.None
             Fill: =RGBA(241, 244, 249, 1)
             FillPortions: =0
-            Height: =Label6_3.Height*20
+            Height: =Container7_2.Height + Container7_2.Y + 50
             LayoutMinHeight: =0
             LayoutMinWidth: =250
             RadiusBottomLeft: =0
@@ -587,6 +587,117 @@
             RadiusTopLeft: =0
             RadiusTopRight: =0
             ZIndex: =8
+
+            Container7_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 0.5)
+                Height: =reviews_2.Height + 60
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Width: =Label6_3.Width
+                X: =Parent.Width*0.05
+                Y: =Container7_1.Y + Container7_1.Height + 30
+                ZIndex: =1
+
+                reviews_2 As label:
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    Font: =Font.'Lato Light'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =
+                    Italic: =true
+                    LineHeight: =1.5
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =15
+                    Text: |-
+                        ="“The interface is user-friendly, and the features are comprehensive, allowing me to easily track multiple assets and create detailed reports. The mobile app is very convenient and allows me to access and update my asset information on the go. Overall, I highly recommend Asseto for anyone in need of a reliable asset management solution.”
+                        
+                        - Cellery D., CEO"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =30
+                    ZIndex: =1
+
+            Container7_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 0.5)
+                Height: =reviews_1.Height + 60
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Width: =Label6_3.Width
+                X: =Parent.Width*0.05
+                Y: =Container7.Y + Container7.Height + 30
+                ZIndex: =2
+
+                reviews_1 As label:
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    Font: =Font.'Lato Light'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =
+                    Italic: =true
+                    LineHeight: =1.5
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =15
+                    Text: |-
+                        ="“Our company has really benefited from selecting this software for our start up. Everything can be built to your needs and some of our needs have been a little difficult. But our Implementation specialist and our Customer Success Manager have been incredible. If you're reading this and are thinking about using Asseto, you really should.”
+                        
+                        - Ken E., Operations Manager"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =30
+                    ZIndex: =1
+
+            Container7 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(255, 255, 255, 0.5)
+                Height: =reviews.Height + 60
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Width: =Label6_3.Width
+                X: =Parent.Width*0.05
+                Y: =Label6_3.Y + Label6_3.Height + 60
+                ZIndex: =3
+
+                reviews As label:
+                    Align: =Align.Center
+                    AutoHeight: =true
+                    Font: =Font.'Lato Light'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =
+                    Italic: =true
+                    LineHeight: =1.5
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =15
+                    Text: |-
+                        ="“Asseto saved me and my team time and money from looking at other asset management software as well as creating our own software internally. We needed a piece of software that could easily track where our assets are and log details as well as check out/in. [We got] all this in a simple user interface and at a low price point. Asseto does the trick.”
+                        
+                        - Phillip K., Director of Quality Engineering"
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.Width*0.9
+                    X: =Parent.Width*0.05
+                    Y: =30
+                    ZIndex: =1
 
             Label6_3 As label:
                 Align: =Align.Center
@@ -598,47 +709,59 @@
                 X: |
                     =Parent.Width*0.05
                 Y: =50
-                ZIndex: =2
-
-            "Gallery1 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-                DelayItemLoading: =true
-                Height: =462
-                Items: =ReviewCollection
-                LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =980
-                Width: =1022.25
-                X: =56
-                Y: =Label6_3.Y + Label6_3.Height + 40
                 ZIndex: =4
 
-                reviews As label:
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =241
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =ThisItem.TextValue
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Parent.TemplateWidth - 64
-                    X: =32
-                    Y: =Image3.Y + Image3.Height + 16
-                    ZIndex: =2
+        Container10 As groupContainer.manualLayoutContainer:
+            Height: =400
+            LayoutMinHeight: =Label4_1.Y + Label4_1.Height + 150
+            LayoutMinWidth: =250
+            ZIndex: =9
 
-            Container7 As groupContainer.manualLayoutContainer:
-                DropShadow: =DropShadow.Regular
-                Fill: =RGBA(255, 255, 255, 0.5)
-                Height: =Label6_4.Height + 60
-                RadiusBottomLeft: =15
-                RadiusBottomRight: =15
-                RadiusTopLeft: =15
-                RadiusTopRight: =15
-                Width: =Label6_3.Width
-                X: =Parent.Width*0.05
-                Y: =Label6_3.Y + Label6_3.Height + 40
-                ZIndex: =5
+            Image4 As image:
+                BorderColor: =RGBA(0, 18, 107, 0.2)
+                BorderThickness: =3
+                Height: =Parent.Height - 130
+                Image: =csm_Digitalisierung_0aaf85a0be
+                ImagePosition: =ImagePosition.Fill
+                Width: =Parent.Width
+                Y: =70
+                ZIndex: =1
+
+            Label4 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Fill: =RGBA(255, 255, 255, 0.75)
+                FontWeight: =FontWeight.Semibold
+                Size: =40
+                Text: ="See Asseto in action"
+                Width: |
+                    =Parent.Width*0.7
+                X: =Parent.Width*0.15
+                Y: =Image4.Height/2
+                ZIndex: =2
+
+            Label4_1 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                Fill: =RGBA(255, 255, 255, 0.75)
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Semibold
+                Size: =25
+                Text: ="Our team will show how we can transform your asset management system"
+                Width: =Parent.Width*0.7
+                X: =Parent.Width*0.15
+                Y: =Label4.Y + Label4.Height 
+                ZIndex: =3
+
+        Label5 As label:
+            Align: =Align.Center
+            Fill: =RGBA(241, 244, 249, 1)
+            Font: =Font.Lato
+            Height: =70
+            Size: =15
+            Text: ="© Asseto 2023"
+            Width: =App.Width
+            ZIndex: =10
 
     Nav As groupContainer.horizontalAutoLayoutContainer:
         DropShadow: =DropShadow.Regular

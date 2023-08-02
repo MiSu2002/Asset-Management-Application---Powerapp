@@ -131,7 +131,7 @@
         "Name": "Label1",
         "Parent": "Navbar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 52,
+        "PublishOrderIndex": 59,
         "Rules": [
           {
             "Category": "Data",
@@ -584,7 +584,7 @@
             "Name": "Button1",
             "Parent": "Container4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 54,
+            "PublishOrderIndex": 61,
             "Rules": [
               {
                 "Category": "Data",
@@ -1034,7 +1034,7 @@
             "Name": "Button1_2",
             "Parent": "Container4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 55,
+            "PublishOrderIndex": 62,
             "Rules": [
               {
                 "Category": "Data",
@@ -1484,7 +1484,7 @@
             "Name": "Button1_3",
             "Parent": "Container4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 56,
+            "PublishOrderIndex": 63,
             "Rules": [
               {
                 "Category": "Data",
@@ -1895,7 +1895,7 @@
                 "Name": "Button2",
                 "Parent": "Container5",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 58,
+                "PublishOrderIndex": 65,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2295,7 +2295,7 @@
             "Name": "Container5",
             "Parent": "Container4",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 57,
+            "PublishOrderIndex": 64,
             "Rules": [
               {
                 "Category": "Design",
@@ -2584,7 +2584,7 @@
         "Name": "Container4",
         "Parent": "Navbar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 53,
+        "PublishOrderIndex": 60,
         "Rules": [
           {
             "Category": "Design",
@@ -2859,7 +2859,7 @@
         "Name": "Icon1",
         "Parent": "Navbar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 59,
+        "PublishOrderIndex": 66,
         "Rules": [
           {
             "Category": "Design",
